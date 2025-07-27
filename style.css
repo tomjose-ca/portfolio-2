@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* banner section */
+.banner-column{
+    height: 85vh;
+}
+
+@media screen and (max-width:740px) {
+    .banner-column{
+        height:auto
+    }
+}
+     
+.hero-section {
+  height: 100vh;
+  background: url('/wildhd.jpeg') center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.hero-section h1,
+.hero-section p {
+  z-index: 2;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.imgn {
+  max-width: 100%;
+  height: auto;
+  display: block; /* optional fix for spacing */
+}
